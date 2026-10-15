@@ -20,3 +20,14 @@ The associated licenses apply to each image file; TechNex Labs does not claim ow
 | `vivo-x200-pro.png` | vivo X200 Pro | X-SHLIED | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · [Commons file](https://commons.wikimedia.org/wiki/File:Vivo_X200_Pro_blue.png) |
 | `tecno-camon-40-pro-5g.jpg` | TECNO CAMON 40 Pro 5G | Meniirtjakarintan | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · [Commons file](https://commons.wikimedia.org/wiki/File:Tecno_Camon_40_Pro_5G.jpg) |
 | `huawei-pura-70-pro.jpg` | HUAWEI Pura 70 Pro | X-SHLIED | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · [Commons file](https://commons.wikimedia.org/wiki/File:HUAWEI_Pura_70_Pro_Black_Back.jpg) |
+
+## Additional Commons catalogue images
+
+These are exact-model Commons assets served from Wikimedia Commons. Catalogue cards link to each file page and license. The SVG assets are schematic device illustrations rather than photographs.
+
+| Device | Creator | License and source |
+|---|---|---|
+| Samsung Galaxy S26 Ultra | Kyu3a | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · [Commons file](https://commons.wikimedia.org/wiki/File:Galaxy_S26_Ultra_-_2.jpg) |
+| Google Pixel 10 Pro (schematic) | Mliu92 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · [Commons file](https://commons.wikimedia.org/wiki/File:Pixel_10_Pro_back_(Obsidian).svg) |
+| Google Pixel 9 Pro (schematic) | Mliu92 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · [Commons file](https://commons.wikimedia.org/wiki/File:Google_Pixel_9_Pro_(Obsidian)_rear.svg) |
+| Apple iPhone 17 | Ahmad Ali Karim | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) · [Commons file](https://commons.wikimedia.org/wiki/File:Sage_iPhone_17_(cropped).jpg) |
