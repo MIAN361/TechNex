@@ -5,12 +5,21 @@
   var base = nested ? '../' : './';
   var page = document.body.dataset.page || 'home';
   var url = function (path) { return base + path; };
+  var domainLabel = function (value) { try { return new URL(value, location.href).hostname.replace(/^www\./, ''); } catch (_error) { return 'publisher website'; } };
   var esc = function (value) {
     return String(value == null ? '' : value).replace(/[&<>"']/g, function (c) {
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
     });
   };
   var icon = '<svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 3 43 14v20L24 45 5 34V14L24 3Z" stroke="#FF7A00" stroke-width="2"/><path d="M15 30V18l9-5 9 5v12l-9 5-9-5Z" stroke="#C0C7D1" stroke-width="2"/><path d="m19 25 5-3 5 3-5 3-5-3Z" fill="#38BDF8"/></svg>';
+  var themes = ['ember','violet','mint','coral','teal','berry','amber','ice'];
+  function rotateTheme() {
+    var current = document.body.dataset.theme || '';
+    var choices = themes.filter(function (name) { return name !== current; });
+    document.body.dataset.theme = choices[Math.floor(Math.random() * choices.length)];
+  }
+  rotateTheme();
+  window.setInterval(rotateTheme, 8000);
   var nav = [['Home', 'index.html'], ['Mobiles', 'pages/mobiles.html'], ['Android', 'pages/android.html'], ['Apple', 'pages/apple.html'], ['Downloads', 'pages/downloads.html'], ['Cyber Security', 'pages/cyber-security.html'], ['Contact', 'pages/contact.html']];
 
   function initChrome() {
@@ -166,8 +175,9 @@
     var specs = model.specifications ? '<h3>Verified specifications</h3><dl class="spec-list">' + Object.entries(model.specifications).map(function (pair) { return '<div><dt>' + esc(pair[0]) + '</dt><dd>' + esc(pair[1]) + '</dd></div>'; }).join('') + '</dl><a class="source" href="' + esc(model.specSource || model.source) + '" target="_blank" rel="noopener">Specification source ↗</a>' : '<p class="note">Detailed specifications are not verified for this model.</p>';
     var nearby = mobiles.filter(function (m) { return m.brand === model.brand && m.id !== model.id; }).slice(0, 4);
     var otherLinks = model.os === 'iOS' ? [['Apple guides', 'pages/apple.html'], ['Software directory', 'pages/downloads.html']] : [['Android guides', 'pages/android.html'], ['Software directory', 'pages/downloads.html']];
+    var detailImageSrc = model.image && /^https?:/.test(model.image) ? model.image : url(model.image || '');
     detail.classList.remove('hidden');
-    detail.innerHTML = '<div class="eyebrow">Device reference · ' + esc(model.brand) + '</div><h2>' + esc(model.name) + '</h2><p>' + esc(model.description) + '</p><div class="columns"><div><span class="tag">Year ' + esc(model.year) + '</span><span class="tag">' + esc(model.os) + '</span><p><strong>Model identifier:</strong> ' + (model.modelNumber ? esc(model.modelNumber) : 'Not verified; check Settings, the device label, or manufacturer support.') + '</p><p><strong>Compatibility:</strong> Confirm full regional model, carrier, build, and firmware before servicing. This entry does not claim cross-variant support.</p>' + specs + '<h3>Care and data</h3><p>Back up first. Reset, restore, bootloader, and firmware procedures may erase data or prevent boot. Only work with owner authorization and manufacturer-supported instructions.</p><h3>Related resources</h3><ul class="list">' + otherLinks.map(function (item) { return '<li><a href="' + esc(url(item[1])) + '">' + esc(item[0]) + '</a></li>'; }).join('') + nearby.map(function (m) { return '<li><a href="' + esc(url('pages/mobiles.html?model=' + encodeURIComponent(m.id))) + '">' + esc(m.name) + ' · ' + esc(m.brand) + '</a></li>'; }).join('') + '</ul></div><div>' + (model.image ? '<img class="detail-photo" src="' + esc(url(model.image)) + '" alt="' + esc(model.name) + ' device photograph" width="500" height="500" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="model-icon detail-fallback" hidden>' + esc(model.brand.slice(0, 2).toUpperCase()) + '<span class="image-status">Image unavailable · branded fallback</span></div>' : '<div class="model-icon detail-fallback">' + esc(model.brand.slice(0, 2).toUpperCase()) + '</div>') + '<a class="button secondary" href="' + esc(model.source) + '" target="_blank" rel="noopener">Manufacturer reference ↗</a><p class="source">Use the official source to verify current support and the exact variant.</p></div></div><button id="close-device-detail" class="secondary" type="button">Close details</button>';
+    detail.innerHTML = '<div class="eyebrow">Device reference · ' + esc(model.brand) + '</div><h2>' + esc(model.name) + '</h2><p>' + esc(model.description) + '</p><div class="columns"><div><span class="tag">Year ' + esc(model.year) + '</span><span class="tag">' + esc(model.os) + '</span><p><strong>Model identifier:</strong> ' + (model.modelNumber ? esc(model.modelNumber) : 'Not verified; check Settings, the device label, or manufacturer support.') + '</p><p><strong>Compatibility:</strong> Confirm full regional model, carrier, build, and firmware before servicing. This entry does not claim cross-variant support.</p>' + specs + '<h3>Care and data</h3><p>Back up first. Reset, restore, bootloader, and firmware procedures may erase data or prevent boot. Only work with owner authorization and manufacturer-supported instructions.</p><h3>Related resources</h3><ul class="list">' + otherLinks.map(function (item) { return '<li><a href="' + esc(url(item[1])) + '">' + esc(item[0]) + '</a></li>'; }).join('') + nearby.map(function (m) { return '<li><a href="' + esc(url('pages/mobiles.html?model=' + encodeURIComponent(m.id))) + '">' + esc(m.name) + ' · ' + esc(m.brand) + '</a></li>'; }).join('') + '</ul></div><div>' + (model.image ? '<img class="detail-photo" src="' + esc(detailImageSrc) + '" alt="' + esc(model.name) + ' device photograph" width="500" height="500" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="model-icon detail-fallback" hidden>' + esc(model.brand.slice(0, 2).toUpperCase()) + '<span class="image-status">Image unavailable · branded fallback</span></div>' : '<div class="model-icon detail-fallback">' + esc(model.brand.slice(0, 2).toUpperCase()) + '</div>') + '<a class="button secondary" href="' + esc(model.source) + '" target="_blank" rel="noopener">Manufacturer reference ↗</a><p class="source">Use the official source to verify current support and the exact variant.</p></div></div><button id="close-device-detail" class="secondary" type="button">Close details</button>';
     detail.scrollIntoView({ behavior: 'smooth', block: 'start' });
     document.querySelector('#close-device-detail').addEventListener('click', function () { detail.classList.add('hidden'); history.replaceState(null, '', location.pathname); query.value = ''; draw(); document.querySelector('#model-query').focus(); });
   }
@@ -180,7 +190,7 @@
         var q = input.value.trim().toLowerCase();
         var found = software.filter(function (item) { return [item.name, item.category, item.description, item.publisher, (item.systems || []).join(' '), item.caution].join(' ').toLowerCase().includes(q); });
         list.innerHTML = found.length ? found.map(function (item) {
-          return '<article class="card software-card" id="' + esc(item.id) + '"><div class="iconbox software-icon" aria-hidden="true">' + esc(item.name.slice(0, 2).toUpperCase()) + '</div><span class="tag">' + esc(item.category) + '</span><h3>' + esc(item.name) + '</h3><p>' + esc(item.description) + '</p><div class="meta">Publisher/project: ' + esc(item.publisher) + ' · Platforms: ' + esc((item.systems || []).join(', ')) + '</div>' + (item.version ? '<p class="meta">Version: ' + esc(item.version) + (item.versionChecked ? ' · checked ' + esc(item.versionChecked) : '') + '</p>' : '') + '<p class="note">' + esc(item.caution) + '</p><a class="button secondary" href="' + esc(item.url) + '" target="_blank" rel="noopener">Publisher or project page ↗</a><div class="source">Source: <a href="' + esc(item.source || item.url) + '" target="_blank" rel="noopener">verify at publisher</a></div></article>';
+          return '<article class="card software-card" id="' + esc(item.id) + '"><div class="iconbox software-icon" aria-hidden="true">' + esc(item.name.slice(0, 2).toUpperCase()) + '</div><span class="tag">' + esc(item.category) + '</span><h3>' + esc(item.name) + '</h3><p>' + esc(item.description) + '</p><div class="meta">Publisher/project: ' + esc(item.publisher) + ' · Platforms: ' + esc((item.systems || []).join(', ')) + '</div>' + (item.version ? '<p class="meta">Version: ' + esc(item.version) + (item.versionChecked ? ' · checked ' + esc(item.versionChecked) : '') + '</p>' : '') + '<p class="note">' + esc(item.caution) + '</p><a class="button secondary" href="' + esc(item.url) + '" target="_blank" rel="noopener">Visit publisher site <span class="button-host">' + esc(domainLabel(item.url)) + ' ↗</span></a><div class="source">Source: <a href="' + esc(item.source || item.url) + '" target="_blank" rel="noopener">verify at publisher</a></div></article>';
         }).join('') : '<div class="empty">No software matches. Try a publisher, platform, or category.</div>';
       }
       input.addEventListener('input', draw);
@@ -196,7 +206,7 @@
         var q = input.value.trim().toLowerCase();
         var found = subset.filter(function (item) { return [item.name, item.category, item.description, item.publisher].join(' ').toLowerCase().includes(q); });
         security.innerHTML = found.length ? found.map(function (item) {
-          return '<article class="card software-card" id="security-' + esc(item.id) + '"><span class="tag">' + esc(item.category) + '</span><h3>' + esc(item.name) + '</h3><p>' + esc(item.description) + '</p><div class="meta">Project: ' + esc(item.publisher) + ' · ' + esc((item.systems || []).join(', ')) + '</div><p class="note">' + esc(item.caution) + '</p><a class="button secondary" href="' + esc(item.url) + '" target="_blank" rel="noopener">Official project page ↗</a></article>';
+          return '<article class="card software-card" id="security-' + esc(item.id) + '"><span class="tag">' + esc(item.category) + '</span><h3>' + esc(item.name) + '</h3><p>' + esc(item.description) + '</p><div class="meta">Project: ' + esc(item.publisher) + ' · ' + esc((item.systems || []).join(', ')) + '</div><p class="note">' + esc(item.caution) + '</p><a class="button secondary" href="' + esc(item.url) + '" target="_blank" rel="noopener">Visit official project <span class="button-host">' + esc(domainLabel(item.url)) + ' ↗</span></a></article>';
         }).join('') : '<div class="empty">No security tools match.</div>';
       }
       input.addEventListener('input', drawSecurity);
@@ -245,12 +255,3 @@
     if (root) root.innerHTML = '<div class="empty">The catalogue could not load. Check the network connection and refresh.</div>';
   });
 }());
-
-  var themes = ['ember','violet','mint','coral','teal','berry','amber','ice'];
-  function rotateTheme() {
-    var current = document.body.dataset.theme || '';
-    var choices = themes.filter(function (name) { return name !== current; });
-    document.body.dataset.theme = choices[Math.floor(Math.random() * choices.length)];
-  }
-  rotateTheme();
-  window.setInterval(rotateTheme, 8000);
