@@ -245,3 +245,12 @@
     if (root) root.innerHTML = '<div class="empty">The catalogue could not load. Check the network connection and refresh.</div>';
   });
 }());
+
+  var themes = ['ember','violet','mint','coral','teal','berry','amber','ice'];
+  function rotateTheme() {
+    var current = document.body.dataset.theme || '';
+    var choices = themes.filter(function (name) { return name !== current; });
+    document.body.dataset.theme = choices[Math.floor(Math.random() * choices.length)];
+  }
+  rotateTheme();
+  window.setInterval(rotateTheme, 8000);
