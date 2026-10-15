@@ -1,0 +1,467 @@
+[
+  {
+    "id": "apple-iphone-16-pro",
+    "brand": "Apple",
+    "name": "iPhone 16 Pro",
+    "year": "2024",
+    "os": "iOS",
+    "source": "https://support.apple.com/en-us/121031",
+    "modelNumber": null,
+    "description": "Curated model reference. Confirm the exact regional model identifier and supported firmware with the manufacturer before servicing.",
+    "specSource": "https://support.apple.com/en-us/121031",
+    "specifications": {
+      "display": "6.3-inch OLED, 2622 × 1206 pixels, adaptive refresh up to 120 Hz",
+      "chipset": "Apple A18 Pro",
+      "storage": "128 GB, 256 GB, 512 GB, or 1 TB"
+    },
+    "license": "CC BY-SA 2.0",
+    "image": "assets/images/mobiles/iphone-16-pro.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:IPhone_16_Pro_(54251031592).jpg",
+    "author": "メイド理世"
+  },
+  {
+    "id": "apple-iphone-16",
+    "brand": "Apple",
+    "name": "iPhone 16",
+    "year": "2024",
+    "os": "iOS",
+    "source": "https://support.apple.com/en-us/121029",
+    "modelNumber": null,
+    "image": null,
+    "description": "Curated model reference. Confirm the exact regional model identifier and supported firmware with the manufacturer before servicing.",
+    "specSource": "https://support.apple.com/en-us/121029",
+    "specifications": {
+      "display": "6.1-inch OLED, 2556 × 1179 pixels",
+      "chipset": "Apple A18",
+      "storage": "128 GB, 256 GB, or 512 GB"
+    }
+  },
+  {
+    "id": "apple-iphone-15",
+    "brand": "Apple",
+    "name": "iPhone 15",
+    "year": "2023",
+    "os": "iOS",
+    "source": "https://support.apple.com/en-nz/111831",
+    "modelNumber": null,
+    "image": "assets/images/mobiles/iphone-15.jpg",
+    "description": "Curated model reference. Confirm the exact regional model identifier and supported firmware with the manufacturer before servicing.",
+    "specSource": "https://support.apple.com/en-nz/111831",
+    "specifications": {
+      "display": "6.1-inch OLED, 2556 × 1179 pixels",
+      "storage": "128 GB, 256 GB, or 512 GB"
+    },
+    "author": "Kyu3",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:IPhone_15.jpg"
+  },
+  {
+    "id": "samsung-galaxy-s25-ultra",
+    "brand": "Samsung",
+    "name": "Galaxy S25 Ultra",
+    "year": "2025",
+    "os": "Android",
+    "source": "https://www.samsung.com/in/business/smartphones/galaxy-s/galaxy-s25-ultra-sm-s938bztbins/",
+    "modelNumber": "SM-S938B",
+    "description": "India-market manufacturer reference variant SM-S938B. Confirm the complete regional model code and firmware before servicing.",
+    "specSource": "https://www.samsung.com/in/business/smartphones/galaxy-s/galaxy-s25-ultra-sm-s938bztbins/",
+    "specifications": {
+      "display": "6.9-inch Dynamic AMOLED 2X, 3120 × 1440, up to 120 Hz",
+      "camera": "Rear cameras: 200 MP + 50 MP + 50 MP + 10 MP; configuration varies by camera"
+    },
+    "license": "CC BY-SA 4.0",
+    "image": "assets/images/mobiles/galaxy-s25-ultra.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S25_Ultra_2025_(1).jpg",
+    "author": "Captainmorlypogi1959"
+  },
+  {
+    "id": "samsung-galaxy-s25",
+    "brand": "Samsung",
+    "name": "Galaxy S25",
+    "year": "2025",
+    "os": "Android",
+    "source": "https://www.samsung.com/us/smartphones/galaxy-s/galaxy-s25-icyblue-256gb-sm-s931ulbexaa/",
+    "modelNumber": "SM-S931U",
+    "image": "assets/images/mobiles/galaxy-s25.jpg",
+    "description": "US-market manufacturer reference variant SM-S931U. Confirm the complete regional model code and firmware before servicing.",
+    "specSource": "https://www.samsung.com/us/smartphones/galaxy-s/galaxy-s25-icyblue-256gb-sm-s931ulbexaa/",
+    "specifications": {
+      "display": "6.2-inch Dynamic AMOLED 2X, 2340 × 1080, up to 120 Hz",
+      "processor": "Octa-core; published CPU speeds 4.47 GHz and 3.5 GHz"
+    },
+    "author": "Mandy Harper",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Galaxy_S25_Black_(front).png"
+  },
+  {
+    "id": "samsung-galaxy-a55-5g",
+    "brand": "Samsung",
+    "name": "Galaxy A55 5G",
+    "year": "2024",
+    "os": "Android",
+    "source": "https://www.samsung.com/mx/smartphones/galaxy-a/galaxy-a55-5g-awesome-iceblue-128gb-sm-a556elbpltm/",
+    "modelNumber": "SM-A556E",
+    "image": "assets/images/mobiles/galaxy-a55-5g.jpg",
+    "description": "Mexico-market manufacturer reference variant SM-A556E. Confirm the complete regional model code and firmware before servicing.",
+    "specSource": "https://www.samsung.com/mx/smartphones/galaxy-a/galaxy-a55-5g-awesome-iceblue-128gb-sm-a556elbpltm/",
+    "specifications": {
+      "display": "6.6-inch Super AMOLED, 2340 × 1080, up to 120 Hz",
+      "camera": "Rear cameras: 50 MP + 12 MP + 5 MP; front camera: 32 MP"
+    },
+    "author": "Captainmorlypogi1959",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_A55_5G_2024.jpg"
+  },
+  {
+    "id": "google-pixel-9-pro",
+    "brand": "Google",
+    "name": "Pixel 9 Pro",
+    "year": "2024",
+    "os": "Android",
+    "source": "https://support.google.com/pixelphone/answer/7158570?hl=en",
+    "modelNumber": null,
+    "image": null,
+    "description": "Curated model reference. Confirm the exact regional model identifier and supported firmware with the manufacturer before servicing.",
+    "specSource": "https://support.google.com/pixelphone/answer/7158570?hl=en",
+    "specifications": {
+      "display": "6.3-inch LTPO OLED, 1280 × 2856, 1–120 Hz",
+      "chipset": "Google Tensor G4",
+      "memoryStorage": "16 GB RAM; 128 GB, 256 GB, 512 GB, or 1 TB storage"
+    }
+  },
+  {
+    "id": "google-pixel-9",
+    "brand": "Google",
+    "name": "Pixel 9",
+    "year": "2024",
+    "os": "Android",
+    "source": "https://support.google.com/pixelphone/answer/7158570?hl=en",
+    "modelNumber": null,
+    "description": "Curated model reference. Confirm the exact regional model identifier and supported firmware with the manufacturer before servicing.",
+    "specSource": "https://support.google.com/pixelphone/answer/7158570?hl=en",
+    "specifications": {
+      "display": "6.3-inch OLED, 1080 × 2424, 60–120 Hz",
+      "chipset": "Google Tensor G4",
+      "memoryStorage": "12 GB RAM; 128 GB or 256 GB storage"
+    },
+    "license": "CC0",
+    "image": "assets/images/mobiles/pixel-9.jpg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Pixel_9.jpg",
+    "author": "Miyako Fujimiya"
+  },
+  {
+    "id": "google-pixel-8a",
+    "brand": "Google",
+    "name": "Pixel 8a",
+    "year": "2024",
+    "os": "Android",
+    "source": "https://support.google.com/pixelphone/answer/7158570?hl=en",
+    "modelNumber": null,
+    "image": "assets/images/mobiles/pixel-8a.jpg",
+    "description": "Curated model reference. Confirm the exact regional model identifier and supported firmware with the manufacturer before servicing.",
+    "specSource": "https://support.google.com/pixelphone/answer/7158570?hl=en",
+    "specifications": {
+      "display": "6.1-inch OLED, 1080 × 2400, up to 120 Hz",
+      "chipset": "Google Tensor G3",
+      "memoryStorage": "8 GB RAM; 128 GB or 256 GB storage"
+    },
+    "author": "Miyako Fujimiya",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Pixel_8a.jpg"
+  },
+  {
+    "id": "xiaomi-xiaomi-14t-pro",
+    "brand": "Xiaomi",
+    "name": "Xiaomi 14T Pro",
+    "year": "2024",
+    "os": "Android",
+    "source": "https://www.mi.com/global/product/xiaomi-14t-pro/",
+    "modelNumber": null,
+    "description": "Curated model reference. Confirm the exact regional model identifier and supported firmware with the manufacturer before servicing.",
+    "specSource": "https://www.mi.com/uk/product/xiaomi-14t-pro/specs/",
+    "specifications": {
+      "display": "AMOLED, 2712 × 1220 pixels, up to 144 Hz",
+      "chipset": "MediaTek Dimensity 9300+",
+      "memoryStorage": "12 GB RAM; 256 GB, 512 GB, or 1 TB storage"
+    },
+    "license": "CC BY-SA 4.0",
+    "image": "assets/images/mobiles/xiaomi-14t-pro.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Xiaomi_14T_Pro.jpg",
+    "author": "Petar Milošević"
+  },
+  {
+    "id": "redmi-note-14-pro-5g",
+    "brand": "Redmi",
+    "name": "Note 14 Pro+ 5G",
+    "year": "2025",
+    "os": "Android",
+    "source": "https://www.mi.com/global/product/redmi-note-14-pro-plus-5g/",
+    "modelNumber": null,
+    "image": null,
+    "description": "Curated model reference. Confirm the exact regional model identifier and supported firmware with the manufacturer before servicing.",
+    "specSource": "https://www.mi.com/ae-en/product/redmi-note-14-pro-plus-5g/specs/",
+    "specifications": {
+      "display": "6.67-inch AMOLED, 2712 × 1220 pixels, up to 120 Hz",
+      "chipset": "Qualcomm Snapdragon 7s Gen 3",
+      "memoryStorage": "8 GB / 256 GB, 12 GB / 256 GB, or 12 GB / 512 GB"
+    }
+  },
+  {
+    "id": "poco-x7-pro",
+    "brand": "POCO",
+    "name": "X7 Pro",
+    "year": "2025",
+    "os": "Android",
+    "source": "https://www.mi.com/global/product/poco-x7-pro/",
+    "modelNumber": null,
+    "image": null,
+    "description": "Curated model reference. Confirm the exact regional model identifier and supported firmware with the manufacturer before servicing.",
+    "specSource": "https://www.mi.com/global/product/poco-x7-pro/specs/",
+    "specifications": {
+      "display": "6.67-inch AMOLED, 2712 × 1220 pixels, up to 120 Hz",
+      "chipset": "MediaTek Dimensity 8400-Ultra",
+      "memoryStorage": "8 GB / 256 GB, 12 GB / 256 GB, or 12 GB / 512 GB"
+    }
+  },
+  {
+    "id": "oneplus-oneplus-13",
+    "brand": "OnePlus",
+    "name": "OnePlus 13",
+    "year": "2025",
+    "os": "Android",
+    "source": "https://www.oneplus.com/global/13/specs",
+    "modelNumber": null,
+    "image": "assets/images/mobiles/oneplus-13.jpg",
+    "description": "Curated model reference. Confirm the exact regional model identifier and supported firmware with the manufacturer before servicing.",
+    "specSource": "https://www.oneplus.com/global/13/specs",
+    "specifications": {
+      "display": "6.82-inch LTPO 4.1 ProXDR, 3168 × 1440, 1–120 Hz",
+      "chipset": "Qualcomm Snapdragon 8 Elite",
+      "memoryStorage": "12 GB / 256 GB or 16 GB / 512 GB (published configurations)"
+    },
+    "author": "Maksdroider",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:OnePlus_13_back.jpg"
+  },
+  {
+    "id": "oppo-find-x8-pro",
+    "brand": "OPPO",
+    "name": "Find X8 Pro",
+    "year": "2024",
+    "os": "Android",
+    "source": "https://www.oppo.com/en/smartphones/series-find-x/find-x8-pro/",
+    "modelNumber": null,
+    "image": "assets/images/mobiles/oppo-find-x8-pro.png",
+    "description": "Curated model reference. Confirm the exact regional model identifier and supported firmware with the manufacturer before servicing.",
+    "specSource": "https://www.oppo.com/in/smartphones/series-find-x/find-x8-pro/specs/",
+    "specifications": {
+      "display": "6.78-inch display (regional spec page)",
+      "chipset": "MediaTek Dimensity 9400",
+      "battery": "Typical 5910 mAh; regional/voltage charging claims vary"
+    },
+    "author": "X-SHLIED",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:OPPO_Find_X8_Pro_white_back.png"
+  },
+  {
+    "id": "vivo-x200-pro",
+    "brand": "vivo",
+    "name": "X200 Pro",
+    "year": "2024",
+    "os": "Android",
+    "source": "https://www.vivo.com/en/products/x200-pro",
+    "modelNumber": null,
+    "image": "assets/images/mobiles/vivo-x200-pro.png",
+    "description": "Curated model reference. Confirm the exact regional model identifier and supported firmware with the manufacturer before servicing.",
+    "specSource": "https://www.vivo.com/en/products/x200-pro",
+    "specifications": {
+      "display": "6.78-inch LTPO display, 0.1–120 Hz",
+      "chipset": "MediaTek Dimensity 9400",
+      "battery": "6000 mAh capacity (manufacturer stated)"
+    },
+    "author": "X-SHLIED",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Vivo_X200_Pro_blue.png"
+  },
+  {
+    "id": "realme-gt-7-pro",
+    "brand": "realme",
+    "name": "GT 7 Pro",
+    "year": "2024",
+    "os": "Android",
+    "source": "https://www.realme.com/global/realme-gt-7-pro",
+    "modelNumber": null,
+    "image": null,
+    "description": "Curated model reference. Confirm the exact regional model identifier and supported firmware with the manufacturer before servicing.",
+    "specSource": "https://www.realme.com/global/realme-gt-7-pro",
+    "specifications": {
+      "display": "6.78-inch 1.5K LTPO OLED, up to 120 Hz",
+      "chipset": "Qualcomm Snapdragon 8 Elite",
+      "battery": "6500 mAh typical capacity (dual-cell equivalent; regional specification)"
+    }
+  },
+  {
+    "id": "tecno-camon-40-pro-5g",
+    "brand": "TECNO",
+    "name": "CAMON 40 Pro 5G",
+    "year": "2025",
+    "os": "Android",
+    "source": "https://www.tecno-mobile.com/phones/tech-specs/techspecs/camon-40-pro-5g/",
+    "modelNumber": null,
+    "image": "assets/images/mobiles/tecno-camon-40-pro-5g.jpg",
+    "description": "Curated model reference. Confirm the exact regional model identifier and supported firmware with the manufacturer before servicing.",
+    "specSource": "https://www.tecno-mobile.com/phones/tech-specs/techspecs/camon-40-pro-5g/",
+    "specifications": {
+      "display": "6.78-inch AMOLED, 1080 × 2436, 144 Hz",
+      "chipset": "MediaTek Dimensity 7300 Ultimate",
+      "memoryStorage": "256 GB storage; 8 GB or 12 GB physical RAM (page also lists memory extension)",
+      "battery": "5200 mAh; 45 W charging"
+    },
+    "author": "Meniirtjakarintan",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Tecno_Camon_40_Pro_5G.jpg"
+  },
+  {
+    "id": "infinix-note-50-pro-5g",
+    "brand": "Infinix",
+    "name": "NOTE 50 Pro+ 5G",
+    "year": "2025",
+    "os": "Android",
+    "source": "https://www.infinixmobility.com/specs/note-50-pro%2B-5g",
+    "modelNumber": null,
+    "image": null,
+    "description": "Manufacturer product reference; launch specifications below are from Infinix Mobility’s company-issued launch release. Verify local variant before service.",
+    "specSource": "https://www.prnewswire.com/news-releases/gen-beta-ai-premium-metal-infinix-note-50-series-reinvents-the-true-flagship-experience-302407681.html",
+    "specifications": {
+      "display": "144 Hz AMOLED; up to 1300 nits peak brightness (company launch statement)",
+      "chipset": "MediaTek Dimensity 8350 Ultimate",
+      "camera": "50 MP OIS main + 50 MP OIS periscope + 8 MP ultra-wide (company launch statement)",
+      "battery": "5200 mAh silicon-carbon; 100 W wired charging (company launch statement)"
+    }
+  },
+  {
+    "id": "huawei-pura-70-pro",
+    "brand": "Huawei",
+    "name": "Pura 70 Pro",
+    "year": "2024",
+    "os": "EMUI / HarmonyOS",
+    "source": "https://consumer.huawei.com/en/phones/pura70-pro/",
+    "modelNumber": null,
+    "image": "assets/images/mobiles/huawei-pura-70-pro.jpg",
+    "description": "Curated model reference. Confirm the exact regional model identifier and supported firmware with the manufacturer before servicing.",
+    "specSource": "https://consumer.huawei.com/hr/phones/pura70-pro/specs/",
+    "specifications": {
+      "display": "6.77-inch LTPO OLED, 2844 × 1260, adaptive 1–120 Hz",
+      "memoryStorage": "12 GB RAM / 512 GB storage (market specification)",
+      "operatingSystem": "EMUI 14.2 (Croatia-market specification)"
+    },
+    "author": "X-SHLIED",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:HUAWEI_Pura_70_Pro_Black_Back.jpg"
+  },
+  {
+    "id": "honor-magic7-pro",
+    "brand": "HONOR",
+    "name": "Magic7 Pro",
+    "year": "2025",
+    "os": "Android",
+    "source": "https://www.honor.com/sa-en/phones/honor-magic7-pro/spec/",
+    "modelNumber": null,
+    "image": null,
+    "description": "Curated model reference. Confirm the exact regional model identifier and supported firmware with the manufacturer before servicing.",
+    "specSource": "https://www.honor.com/sa-en/phones/honor-magic7-pro/spec/",
+    "specifications": {
+      "display": "6.8-inch OLED, 1280 × 2800",
+      "chipset": "Qualcomm Snapdragon 8 Elite",
+      "memoryStorage": "12 GB RAM / 512 GB storage",
+      "operatingSystem": "MagicOS 9.0 based on Android 15 (market specification)"
+    }
+  },
+  {
+    "id": "motorola-edge-50-ultra",
+    "brand": "Motorola",
+    "name": "edge 50 ultra",
+    "year": "2024",
+    "os": "Android",
+    "source": "https://en-in.support.motorola.com/app/answers/detail/a_id/187312/~/specifications---motorola-edge-50-ultra",
+    "modelNumber": "XT2401-1",
+    "image": null,
+    "description": "Motorola India specification page and XT2401-1 product identifier reference. Specs vary by market; verify the complete device code.",
+    "specSource": "https://en-in.support.motorola.com/app/answers/detail/a_id/187312/~/specifications---motorola-edge-50-ultra",
+    "modelNumberSource": "https://en-emea.support.motorola.com/app/answers/detail/a_id/179389/~/uk-psti-soc-xt2401-1-motorola-edge-50-ultra",
+    "specifications": {
+      "display": "6.7-inch pOLED, 2712 × 1220, 144 Hz",
+      "chipset": "Qualcomm Snapdragon 8s Gen 3",
+      "memoryStorage": "12 GB RAM / 512 GB storage (India support-page specification)",
+      "battery": "4500 mAh"
+    }
+  },
+  {
+    "id": "nokia-hmd-g42-5g",
+    "brand": "Nokia / HMD",
+    "name": "G42 5G",
+    "year": "2023",
+    "os": "Android",
+    "source": "https://www.hmd.com/en_in/nokia-g-42/specs",
+    "modelNumber": "TA-1586",
+    "image": null,
+    "description": "HMD India specification page and India-market model identifier. Confirm region and carrier support before service.",
+    "specSource": "https://www.hmd.com/en_in/nokia-g-42/specs",
+    "specifications": {
+      "display": "6.56-inch HD+ (720 × 1612), 90 Hz",
+      "chipset": "Qualcomm Snapdragon 480+ 5G",
+      "memoryStorage": "4 GB / 6 GB / 8 GB RAM; 128 GB or 256 GB storage (market options)",
+      "battery": "5000 mAh; 20 W charging support"
+    }
+  },
+  {
+    "id": "nothing-phone-3a",
+    "brand": "Nothing",
+    "name": "Phone (3a)",
+    "year": "2025",
+    "os": "Android",
+    "source": "https://mt.nothing.tech/pages/phone-3a",
+    "modelNumber": null,
+    "image": null,
+    "description": "Curated model reference. Confirm the exact regional model identifier and supported firmware with the manufacturer before servicing.",
+    "specSource": "https://mt.nothing.tech/pages/phone-3a",
+    "specifications": {
+      "display": "6.77-inch AMOLED, 1080 × 2392, adaptive 120 Hz",
+      "chipset": "Qualcomm Snapdragon 7s Gen 3",
+      "memoryStorage": "8 GB / 128 GB or 12 GB / 256 GB",
+      "battery": "5000 mAh; 50 W charging",
+      "operatingSystem": "Nothing OS 3.1 based on Android 15 (launch specification)"
+    }
+  },
+  {
+    "id": "lg-v60-thinq-5g",
+    "brand": "LG",
+    "name": "V60 ThinQ 5G",
+    "year": "2020",
+    "os": "Android",
+    "source": "https://www.lg.com/us/cell-phones/lg-lmv600amaattcb-att-v60-thinq-5g",
+    "modelNumber": "LM-V600AM",
+    "image": null,
+    "description": "AT&T-market manufacturer reference variant LM-V600AM. Carrier and regional variants differ; verify exact device and firmware before service.",
+    "specSource": "https://www.lg.com/us/cell-phones/lg-lmv600amaattcb-att-v60-thinq-5g",
+    "specifications": {
+      "display": "6.8-inch OLED",
+      "camera": "64 MP standard + 13 MP ultra-wide + Z Camera",
+      "chipset": "Qualcomm Snapdragon 865",
+      "battery": "5000 mAh"
+    }
+  }
+]
