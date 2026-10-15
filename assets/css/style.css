@@ -70,3 +70,17 @@ body{background:radial-gradient(ellipse at 82% 12%,color-mix(in srgb,var(--theme
 @media(prefers-reduced-motion:reduce){.hero-art,.orb{animation:none!important}}
 .software-card .button{display:flex;flex-direction:column;align-items:flex-start;gap:0;line-height:1.35}
 .button-host{font-size:11px;font-weight:500;opacity:.82;overflow-wrap:anywhere}
+
+/* Clear homepage hero artwork and model imagery fallbacks */
+.hero-art{isolation:isolate;min-height:340px}
+.hero-art:before,.hero-art:after{display:none}
+.hero-visual{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.96}
+.founder-plaque{position:absolute;z-index:2;left:18px;bottom:18px;display:grid;gap:1px;min-width:200px;padding:12px 17px;border:1px solid #ffffff3b;border-radius:16px;background:linear-gradient(110deg,#080d1eef,#11172bea);box-shadow:0 12px 36px #020617a8}
+.founder-plaque span,.founder-plaque small{color:#7df0d1;font-size:9px;font-weight:800;letter-spacing:.23em}
+.founder-plaque strong{color:#fff;font:700 clamp(19px,2.4vw,27px)/1.15 Outfit,Inter,sans-serif;letter-spacing:.04em}
+.model-photo{background:linear-gradient(145deg,#18233d,#101725)}
+.image-credit{min-height:15px}
+.featured-device-card{display:flex;flex-direction:column;gap:7px;overflow:hidden}
+.featured-device-photo{width:100%;height:180px;object-fit:contain;border-radius:12px;background:linear-gradient(145deg,#18233d,#101725)}
+.featured-device-card p,.featured-device-card h3{margin:0}
+@media(max-width:700px){.hero-art{min-height:280px}.founder-plaque{left:12px;bottom:12px;min-width:178px;padding:10px 13px}.founder-plaque strong{font-size:21px}}
