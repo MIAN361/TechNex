@@ -4,7 +4,7 @@
 
 .search-suggestions{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:12px;color:var(--muted);font-size:12px}.search-suggestions button{padding:5px 10px;border-radius:999px;background:#121c2c;border-color:#30415b;color:#d9e4f2;font-size:12px}.search-suggestions button:hover,.brand-chip:hover{border-color:var(--orange);color:var(--text)}.brand-feature-grid{display:flex;flex-wrap:wrap;gap:9px;margin:8px 0 30px}.brand-chip{display:inline-flex;align-items:center;min-height:42px;padding:8px 14px;border:1px solid #30415b;border-radius:999px;background:#111a29;color:#d5deea;font-size:13px}.brand-feature-head{margin-top:30px}
 
-/* Eight accessible automatic accent palettes, switched randomly every eight seconds. */
+/* Accessible, automatically rotating accent palettes. Each palette keeps the dark base and readable text. */
 :root{--theme-accent:#ff7a00;--theme-highlight:#38bdf8;--theme-line:#27364c}
 body{--orange:var(--theme-accent);--blue:var(--theme-highlight);--line:var(--theme-line);transition:background-color .7s ease,color .7s ease}
 button:not(.secondary),.button:not(.secondary){background:var(--theme-accent);color:#101018;transition:background-color .7s ease,border-color .7s ease,color .7s ease}
@@ -21,3 +21,52 @@ body[data-theme="berry"]{--theme-accent:#e879f9;--theme-highlight:#67e8f9;--them
 body[data-theme="amber"]{--theme-accent:#fbbf24;--theme-highlight:#c4b5fd;--theme-line:#5a4b30}
 body[data-theme="ice"]{--theme-accent:#60a5fa;--theme-highlight:#f9a8d4;--theme-line:#334a67}
 @media(prefers-reduced-motion:reduce){body,button,.button,.eyebrow,.hero h1 em,.orb b,.iconbox,.navlinks a{transition:none!important}}
+
+/* Color-rich TechNex home treatment. Accent hues follow the existing eight-color rotation. */
+body{background:radial-gradient(ellipse at 82% 12%,color-mix(in srgb,var(--theme-accent) 20%,transparent),transparent 35%),radial-gradient(ellipse at 8% 42%,color-mix(in srgb,var(--theme-highlight) 12%,transparent),transparent 33%),radial-gradient(ellipse at 72% 78%,color-mix(in srgb,#c084fc 10%,transparent),transparent 30%),linear-gradient(145deg,#050816 0%,#0a1021 55%,#080b18 100%);background-attachment:fixed}
+.hero{position:relative}
+.hero-art{background:radial-gradient(ellipse at 18% 18%,color-mix(in srgb,var(--theme-accent) 35%,transparent),transparent 45%),radial-gradient(ellipse at 82% 78%,color-mix(in srgb,var(--theme-highlight) 28%,transparent),transparent 48%),linear-gradient(135deg,#17162f,#0d1526 58%,#151127);border-color:color-mix(in srgb,var(--theme-accent) 48%,#31415b);box-shadow:0 28px 100px #0008,0 0 44px color-mix(in srgb,var(--theme-accent) 13%,transparent);transition:background .8s ease,border-color .8s ease,box-shadow .8s ease}
+.hero-art:before,.hero-art:after{border-color:color-mix(in srgb,var(--theme-accent) 22%,transparent);box-shadow:0 0 35px color-mix(in srgb,var(--theme-highlight) 10%,transparent)}
+.orb{color:#fff;text-shadow:0 0 22px color-mix(in srgb,var(--theme-accent) 68%,transparent),0 0 50px color-mix(in srgb,var(--theme-highlight) 30%,transparent)}
+.orb b{color:var(--theme-accent)}
+.grid.four>.card,.columns>.card{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(145deg,color-mix(in srgb,var(--tile-accent,var(--theme-accent)) 12%,#121d2d),#0d1523 72%);border-color:color-mix(in srgb,var(--tile-accent,var(--theme-accent)) 28%,var(--line));box-shadow:0 12px 34px #0003}
+.grid.four>.card:before,.columns>.card:before{content:"";position:absolute;z-index:-1;inset:0 0 auto;height:3px;background:linear-gradient(90deg,var(--tile-accent,var(--theme-accent)),color-mix(in srgb,var(--tile-accent,var(--theme-accent)) 20%,var(--theme-highlight)));opacity:.95}
+.grid.four>.card:nth-child(4n+1),.columns>.card:nth-child(2n+1){--tile-accent:#fb923c}
+.grid.four>.card:nth-child(4n+2),.columns>.card:nth-child(2n){--tile-accent:#38bdf8}
+.grid.four>.card:nth-child(4n+3){--tile-accent:#c084fc}
+.grid.four>.card:nth-child(4n){--tile-accent:#34d399}
+.grid.four>.card:hover,.columns>.card:hover{transform:translateY(-5px);border-color:var(--tile-accent,var(--theme-accent));box-shadow:0 20px 44px #0006,0 0 26px color-mix(in srgb,var(--tile-accent,var(--theme-accent)) 17%,transparent)}
+.grid.four>.card h3,.columns>.card h3{color:color-mix(in srgb,var(--tile-accent,var(--theme-accent)) 72%,white);font-size:20px;letter-spacing:-.015em}
+.grid.four>.card .iconbox,.columns>.card .iconbox{color:var(--tile-accent,var(--theme-accent));background:color-mix(in srgb,var(--tile-accent,var(--theme-accent)) 15%,transparent);border:1px solid color-mix(in srgb,var(--tile-accent,var(--theme-accent)) 34%,transparent)}
+#featured-models>.card,#featured-tools>.card{position:relative;overflow:hidden;background:linear-gradient(150deg,color-mix(in srgb,var(--theme-highlight) 10%,#121d2d),#0d1523 68%);border-color:color-mix(in srgb,var(--theme-highlight) 28%,var(--line));box-shadow:0 12px 34px #0003}
+#featured-models>.card:before,#featured-tools>.card:before{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,var(--theme-accent),var(--theme-highlight),#c084fc)}
+#featured-models>.card h3,#featured-tools>.card h3{background:linear-gradient(90deg,#fff 4%,var(--theme-highlight) 55%,#d8b4fe);-webkit-background-clip:text;background-clip:text;color:transparent}
+.brand-chip{background:linear-gradient(135deg,color-mix(in srgb,var(--theme-accent) 10%,#111a29),color-mix(in srgb,var(--theme-highlight) 9%,#111a29));border-color:color-mix(in srgb,var(--theme-highlight) 24%,#30415b);transition:transform .2s,border-color .7s,color .7s}
+.brand-chip:hover{transform:translateY(-2px)}
+@media(max-width:700px){body{background-attachment:scroll}.hero-art{min-height:250px}}
+@media(prefers-reduced-motion:reduce){.hero-art,.grid.four>.card,.columns>.card,.brand-chip{transition:none!important}}
+
+/* Extend the homepage's colorful card system to every section and guide page. */
+.grid:not(.four)>.card,.guide-list>.guide-card{--tile-accent:var(--theme-accent);position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(145deg,color-mix(in srgb,var(--tile-accent) 11%,#121d2d),#0d1523 74%);border-color:color-mix(in srgb,var(--tile-accent) 28%,var(--line));box-shadow:0 12px 34px #0003}
+.grid:not(.four)>.card:before,.guide-list>.guide-card:before{content:"";position:absolute;z-index:-1;inset:0 0 auto;height:3px;background:linear-gradient(90deg,var(--tile-accent),var(--theme-highlight),#c084fc)}
+.grid:not(.four)>.card:nth-child(4n+1),.guide-list>.guide-card:nth-child(4n+1){--tile-accent:#fb923c}
+.grid:not(.four)>.card:nth-child(4n+2),.guide-list>.guide-card:nth-child(4n+2){--tile-accent:#38bdf8}
+.grid:not(.four)>.card:nth-child(4n+3),.guide-list>.guide-card:nth-child(4n+3){--tile-accent:#c084fc}
+.grid:not(.four)>.card:nth-child(4n),.guide-list>.guide-card:nth-child(4n){--tile-accent:#34d399}
+.grid:not(.four)>.card h3,.guide-list>.guide-card summary strong{color:color-mix(in srgb,var(--tile-accent) 76%,white)}
+.grid:not(.four)>.card .iconbox{color:var(--tile-accent);background:color-mix(in srgb,var(--tile-accent) 15%,transparent);border:1px solid color-mix(in srgb,var(--tile-accent) 34%,transparent)}
+.grid:not(.four)>.card:hover,.guide-list>.guide-card:hover{transform:translateY(-4px);border-color:var(--tile-accent);box-shadow:0 20px 44px #0006,0 0 26px color-mix(in srgb,var(--tile-accent) 16%,transparent)}
+.pagehead{position:relative;isolation:isolate;overflow:hidden;margin-top:24px;padding:36px clamp(20px,4vw,48px) 30px;border:1px solid color-mix(in srgb,var(--theme-highlight) 25%,var(--line));border-radius:26px;background:radial-gradient(ellipse at 92% 5%,color-mix(in srgb,var(--theme-highlight) 22%,transparent),transparent 40%),radial-gradient(ellipse at 4% 100%,color-mix(in srgb,var(--theme-accent) 20%,transparent),transparent 45%),linear-gradient(135deg,#10172a,#0b1120 70%);box-shadow:0 20px 60px #0003}
+.pagehead>*{position:relative;z-index:1}
+.hero-art{background-size:180% 180%;animation:heroColorFlow 16s ease-in-out infinite alternate}
+@keyframes heroColorFlow{from{background-position:0% 10%}to{background-position:100% 90%}}
+.founder-kicker{display:inline-flex;align-items:center;gap:9px;width:max-content;max-width:100%;padding:7px 12px;border:1px solid color-mix(in srgb,var(--theme-highlight) 50%,transparent);border-radius:999px;background:linear-gradient(100deg,color-mix(in srgb,var(--theme-accent) 18%,#101725),color-mix(in srgb,var(--theme-highlight) 16%,#101725));color:#fff!important;font-size:10px;letter-spacing:.2em;text-shadow:0 0 18px color-mix(in srgb,var(--theme-highlight) 65%,transparent)}
+.founder-kicker:before{content:"✦";color:var(--theme-highlight)}
+.hero .eyebrow:not(.founder-kicker){margin-top:16px}
+.orb{font-size:clamp(24px,3vw,36px);letter-spacing:.08em;background:linear-gradient(100deg,#fff 8%,var(--theme-highlight) 48%,var(--theme-accent) 90%);-webkit-background-clip:text;background-clip:text;color:transparent;animation:founderGlow 4s ease-in-out infinite alternate}
+.orb b{background:linear-gradient(90deg,var(--theme-accent),var(--theme-highlight));-webkit-background-clip:text;background-clip:text;color:transparent;font-size:10px;letter-spacing:.24em}
+@keyframes founderGlow{from{filter:drop-shadow(0 0 8px color-mix(in srgb,var(--theme-accent) 30%,transparent))}to{filter:drop-shadow(0 0 22px color-mix(in srgb,var(--theme-highlight) 70%,transparent))}}
+@media(max-width:700px){.pagehead{margin-top:14px;padding:26px 18px 22px}.founder-kicker{font-size:9px;letter-spacing:.14em}}
+@media(prefers-reduced-motion:reduce){.hero-art,.orb{animation:none!important}}
+.software-card .button{display:flex;flex-direction:column;align-items:flex-start;gap:0;line-height:1.35}
+.button-host{font-size:11px;font-weight:500;opacity:.82;overflow-wrap:anywhere}
