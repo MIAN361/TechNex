@@ -1,10 +1,109 @@
 [
-  {"id":"apple-iphone-17","brand":"Apple","name":"iPhone 17","year":"2025","os":"iOS","source":"https://www.apple.com/iphone-17/specs/","modelNumber":null,"description":"Apple standard iPhone reference. Confirm region, eSIM/SIM configuration, and service procedures before repair.","specSource":"https://www.apple.com/iphone-17/specs/","specifications":{"display":"6.3-inch OLED, 2622 × 1206, ProMotion up to 120 Hz","chipset":"Apple A19","camera":"48 MP Fusion main + 48 MP Fusion Ultra Wide","storage":"256 GB or 512 GB"}},
-  {"id":"google-pixel-10-pro","brand":"Google","name":"Pixel 10 Pro","year":"2025","os":"Android","source":"https://store.google.com/product/pixel_10_pro_specs?hl=en-US","modelNumber":null,"description":"Google US-store reference; storage and network configurations vary by region.","specSource":"https://store.google.com/product/pixel_10_pro_specs?hl=en-US","specifications":{"display":"6.3-inch LTPO OLED, 1280 × 2856, adaptive 1–120 Hz","chipset":"Google Tensor G5 with Titan M2 security coprocessor","memoryStorage":"16 GB RAM; 128 GB, 256 GB, 512 GB, or 1 TB storage","camera":"50 MP wide + 48 MP ultra-wide + 48 MP 5× telephoto","battery":"4870 mAh typical; Qi2 wireless charging up to 15 W"}},
-  {"id":"xiaomi-xiaomi-17","brand":"Xiaomi","name":"Xiaomi 17","year":"2025","os":"Android","source":"https://www.mi.com/global/product/xiaomi-17/","modelNumber":null,"description":"Xiaomi Global product reference. Regional memory, bands, and software builds vary.","specSource":"https://www.mi.com/global/product/xiaomi-17/","specifications":{"display":"6.3-inch OLED, 2656 × 1220, adaptive 1–120 Hz","chipset":"Qualcomm Snapdragon 8 Elite Gen 5","camera":"50 MP Leica main + 50 MP telephoto + 50 MP ultra-wide","battery":"6330 mAh typical; 100 W wired and 50 W wireless charging","memoryStorage":"12 GB RAM; 256 GB or 512 GB storage"}},
-  {"id":"oneplus-oneplus-15","brand":"OnePlus","name":"OnePlus 15","year":"2026","os":"Android","source":"https://www.oneplus.com/us/15/specs","modelNumber":null,"description":"OnePlus US specifications reference. Connectivity bands and battery configurations can vary by region.","specSource":"https://www.oneplus.com/us/15/specs","specifications":{"display":"6.78-inch, 2772 × 1272, adaptive up to 165 Hz gaming refresh","chipset":"Qualcomm Snapdragon 8 Elite Gen 5","memoryStorage":"12 GB / 256 GB or 16 GB / 512 GB","battery":"7300 mAh typical dual-cell; 80 W wired and 50 W wireless charging","camera":"50 MP main + 50 MP 3.5× telephoto + 50 MP ultra-wide"}},
-  {"id":"samsung-galaxy-s26-ultra","brand":"Samsung","name":"Galaxy S26 Ultra","year":"2026","os":"Android","source":"https://www.samsung.com/us/smartphones/galaxy-s26-ultra/","modelNumber":"SM-S948U","description":"US-market product family reference; confirm complete suffix, carrier variant, and part compatibility from device label.","specSource":"https://www.samsung.com/us/smartphones/galaxy-s26-ultra/","modelNumberSource":"https://www.samsung.com/us/smartphones/galaxy-s26-ultra/buy/galaxy-s26-ultra-256gb-unlocked-sku-sm-s948uzkaxaa/","specifications":{"display":"6.9-inch QHD+ (3120 × 1440) display with Privacy Display","chipset":"Qualcomm Snapdragon 8 Elite Gen 5 or Exynos 2600 by market","battery":"5000 mAh","dimensions":"163.6 × 78.1 × 7.9 mm; 214 g","operatingSystem":"Android 16; One UI 8.5"}},
-
+  {
+    "id": "samsung-galaxy-s26-ultra",
+    "brand": "Samsung",
+    "name": "Galaxy S26 Ultra",
+    "year": "2026",
+    "os": "Android",
+    "source": "https://www.samsung.com/us/smartphones/galaxy-s26-ultra/",
+    "modelNumber": "SM-S948U",
+    "description": "US-market product family reference; confirm the complete suffix, carrier variant, and component compatibility from the device label.",
+    "specSource": "https://www.samsung.com/us/smartphones/galaxy-s26-ultra/",
+    "modelNumberSource": "https://www.samsung.com/us/smartphones/galaxy-s26-ultra/buy/galaxy-s26-ultra-256gb-unlocked-sku-sm-s948uzkaxaa/",
+    "specifications": {
+      "display": "6.9-inch QHD+ (3120 × 1440) display with Privacy Display",
+      "chipset": "Qualcomm Snapdragon 8 Elite Gen 5 or Exynos 2600 by market",
+      "battery": "5000 mAh",
+      "dimensions": "163.6 × 78.1 × 7.9 mm; 214 g",
+      "operatingSystem": "Android 16; One UI 8.5 (Samsung 2026 report)"
+    },
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Galaxy_S26_Ultra_-_2.jpg?width=700",
+    "author": "Kyu3a",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Galaxy_S26_Ultra_-_2.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  {
+    "id": "oneplus-oneplus-15",
+    "brand": "OnePlus",
+    "name": "OnePlus 15",
+    "year": "2026",
+    "os": "Android",
+    "source": "https://www.oneplus.com/us/15/specs",
+    "modelNumber": null,
+    "description": "OnePlus US specifications reference. Connectivity bands and battery configurations can vary by region; check the exact variant before service.",
+    "specSource": "https://www.oneplus.com/us/15/specs",
+    "specifications": {
+      "display": "6.78-inch, 2772 × 1272, adaptive up to 165 Hz gaming refresh",
+      "chipset": "Qualcomm Snapdragon 8 Elite Gen 5",
+      "memoryStorage": "12 GB / 256 GB or 16 GB / 512 GB",
+      "battery": "7300 mAh typical dual-cell; 80 W wired and 50 W wireless charging",
+      "camera": "50 MP main + 50 MP 3.5× telephoto + 50 MP ultra-wide"
+    }
+  },
+  {
+    "id": "xiaomi-xiaomi-17",
+    "brand": "Xiaomi",
+    "name": "Xiaomi 17",
+    "year": "2025",
+    "os": "Android",
+    "source": "https://www.mi.com/global/product/xiaomi-17/",
+    "modelNumber": null,
+    "description": "Xiaomi Global product reference. Regional memory, bands, and software builds vary; confirm exact variant before repair.",
+    "specSource": "https://www.mi.com/global/product/xiaomi-17/",
+    "specifications": {
+      "display": "6.3-inch OLED, 2656 × 1220, adaptive 1–120 Hz",
+      "chipset": "Qualcomm Snapdragon 8 Elite Gen 5",
+      "camera": "50 MP Leica main + 50 MP telephoto + 50 MP ultra-wide",
+      "battery": "6330 mAh typical; 100 W wired and 50 W wireless charging",
+      "memoryStorage": "12 GB RAM; 256 GB or 512 GB storage (market options)"
+    }
+  },
+  {
+    "id": "google-pixel-10-pro",
+    "brand": "Google",
+    "name": "Pixel 10 Pro",
+    "year": "2025",
+    "os": "Android",
+    "source": "https://store.google.com/product/pixel_10_pro_specs?hl=en-US",
+    "modelNumber": null,
+    "description": "Google US-store product reference. Storage and network configurations vary by region; verify exact variant before service.",
+    "specSource": "https://store.google.com/product/pixel_10_pro_specs?hl=en-US",
+    "specifications": {
+      "display": "6.3-inch LTPO OLED, 1280 × 2856, adaptive 1–120 Hz",
+      "chipset": "Google Tensor G5 with Titan M2 security coprocessor",
+      "memoryStorage": "16 GB RAM; 128 GB, 256 GB, 512 GB, or 1 TB storage (market options)",
+      "camera": "50 MP wide + 48 MP ultra-wide + 48 MP 5× telephoto",
+      "battery": "4870 mAh typical; Qi2 wireless charging up to 15 W"
+    },
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pixel_10_Pro_back_%28Obsidian%29.svg?width=500",
+    "author": "Mliu92",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Pixel_10_Pro_back_(Obsidian).svg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  {
+    "id": "apple-iphone-17",
+    "brand": "Apple",
+    "name": "iPhone 17",
+    "year": "2025",
+    "os": "iOS",
+    "source": "https://www.apple.com/iphone-17/specs/",
+    "modelNumber": null,
+    "description": "Apple’s standard iPhone reference. Confirm region, eSIM/SIM configuration, and service procedures before repair.",
+    "specSource": "https://www.apple.com/iphone-17/specs/",
+    "specifications": {
+      "display": "6.3-inch OLED, 2622 × 1206, ProMotion up to 120 Hz",
+      "chipset": "Apple A19",
+      "camera": "48 MP Fusion main + 48 MP Fusion Ultra Wide",
+      "storage": "256 GB or 512 GB"
+    },
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sage_iPhone_17_%28cropped%29.jpg?width=700",
+    "author": "Ahmad Ali Karim",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Sage_iPhone_17_(cropped).jpg",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
   {
     "id": "apple-iphone-16-pro",
     "brand": "Apple",
@@ -131,14 +230,18 @@
     "os": "Android",
     "source": "https://support.google.com/pixelphone/answer/7158570?hl=en",
     "modelNumber": null,
-    "image": null,
     "description": "Curated model reference. Confirm the exact regional model identifier and supported firmware with the manufacturer before servicing.",
     "specSource": "https://support.google.com/pixelphone/answer/7158570?hl=en",
     "specifications": {
       "display": "6.3-inch LTPO OLED, 1280 × 2856, 1–120 Hz",
       "chipset": "Google Tensor G4",
       "memoryStorage": "16 GB RAM; 128 GB, 256 GB, 512 GB, or 1 TB storage"
-    }
+    },
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Google_Pixel_9_Pro_%28Obsidian%29_rear.svg?width=500",
+    "author": "Mliu92",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Google_Pixel_9_Pro_(Obsidian)_rear.svg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
   },
   {
     "id": "google-pixel-9",
